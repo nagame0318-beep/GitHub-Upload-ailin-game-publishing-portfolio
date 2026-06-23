@@ -299,13 +299,17 @@ img {
   color: var(--lime);
 }
 
-.hero-portrait {
-  position: relative;
+.hero-side {
   align-self: center;
   width: min(20vw, 300px);
+  margin: 7vh 5vw 5vh auto;
+}
+
+.hero-portrait {
+  position: relative;
+  width: 100%;
   height: min(50vh, 500px);
   min-height: 380px;
-  margin: 7vh 5vw 5vh auto;
   padding: 10px;
   border: 1px solid rgba(198, 240, 0, 0.72);
   background: var(--paper);
@@ -344,6 +348,16 @@ img {
 
 .portrait-label span:last-child {
   color: var(--lime);
+}
+
+.hero-contact-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.hero-contact-actions .button {
+  width: 100%;
 }
 
 .hero-stats {
@@ -1380,10 +1394,13 @@ a:focus-visible {
     padding-left: 4vw;
   }
 
-  .hero-portrait {
+  .hero-side {
     width: min(24vw, 280px);
-    min-height: 360px;
     margin-right: 4vw;
+  }
+
+  .hero-portrait {
+    min-height: 360px;
   }
 
   .nav {
@@ -1504,11 +1521,15 @@ a:focus-visible {
     font-size: 25px;
   }
 
-  .hero-portrait {
+  .hero-side {
     width: min(72vw, 330px);
+    margin: 0 5vw 54px auto;
+  }
+
+  .hero-portrait {
+    width: 100%;
     height: 420px;
     min-height: 0;
-    margin: 0 5vw 54px auto;
   }
 
   .hero-portrait::before {
@@ -1701,8 +1722,12 @@ a:focus-visible {
     font-size: 21px;
   }
 
-  .hero-portrait {
+  .hero-side {
     width: calc(100% - 10vw);
+  }
+
+  .hero-portrait {
+    width: 100%;
     height: 390px;
   }
 

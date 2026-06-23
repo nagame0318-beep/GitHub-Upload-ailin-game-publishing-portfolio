@@ -14,14 +14,14 @@ import {
 
 const content = {
   en: {
-    nav: ["Method", "Role Fit", "Timeline", "Evidence", "Games", "About"],
-    heroEyebrow: "TENCENT GAME PUBLISHING / OPERATIONS · ROLE-TAILORED",
+    nav: ["Role Fit", "Timeline", "Selected Work", "Games", "About"],
+    heroEyebrow: "",
     heroRole: "GAME PUBLISHING & OPERATIONS",
-    heroLine: "I LISTEN TO PLAYERS, FIND THE PATTERN, AND TURN IT INTO ACTION.",
+    heroLine: "",
     heroBody:
       "My experience spans player interviews, community and creator relations, campaign operations, publishing content and cross-functional delivery. I combine qualitative feedback, performance data and hands-on game knowledge to improve how a game reaches and serves its players.",
-    heroCta: "VIEW ROLE EVIDENCE",
-    resume: "DOWNLOAD TARGETED CV",
+    heroCta: "VIEW SELECTED WORK",
+    resume: "DOWNLOAD CV",
     stats: [
       ["39.7%", "H5 VISIT → SIGN-UP"],
       ["20–30", "ENGLISH PLAYER / CREATOR / MEDIA INTERVIEWS"],
@@ -38,18 +38,9 @@ const content = {
     timelineTitle: "CAREER & RELEASE TIMELINE",
     timelineIntro:
       "The roles and projects that took me from player communities to international publishing work.",
-    selectedTitle: "ROLE EVIDENCE",
+    selectedTitle: "SELECTED WORK",
     selectedIntro:
       "Four projects showing how I turn player needs and business goals into content, campaigns, community work and measurable outcomes.",
-    methodKicker: "OPERATING APPROACH",
-    methodTitle: "PUT PLAYER VOICE, PERFORMANCE DATA AND PRODUCT GOALS IN THE SAME FRAME.",
-    methodBody:
-      "I begin with community feedback, interviews and behavior signals, translate the finding into an operating action, then use participation, conversion and player response to decide what should change next.",
-    methodSteps: [
-      ["01", "UNDERSTAND PLAYERS", "Combine interviews, community feedback, data and first-hand game knowledge."],
-      ["02", "DESIGN THE ACTION", "Turn the objective into content, activity mechanics, channels and player value."],
-      ["03", "REVIEW & ITERATE", "Use conversion, participation and qualitative response to improve the next action."],
-    ],
     fitKicker: "WHY THIS ROLE",
     fitTitle: "ROLE FIT",
     fitIntro:
@@ -76,7 +67,7 @@ const content = {
     languages: "Chinese · English (Business)",
     education: "University of Sydney · Digital Communication & Culture",
     tools: "Codex · Photoshop · Premiere Pro · InDesign · After Effects",
-    footerTitle: "READY TO GROW WITH THE GAME",
+    footerTitle: "READY TO BRING THE NEXT GREAT GAME TO MORE PLAYERS",
     footerBody:
       "Targeting game publishing and operations roles focused on player insight, user operations, activities and channel growth.",
     copyWechat: "COPY WECHAT",
@@ -97,14 +88,14 @@ const content = {
     toggleNavigation: "Toggle navigation",
   },
   zh: {
-    nav: ["运营思路", "岗位匹配", "职业时间线", "项目证据", "游戏经历", "关于我"],
-    heroEyebrow: "腾讯游戏发行 / 运营培训生 · 岗位定向版",
+    nav: ["岗位匹配", "职业时间线", "精选项目", "游戏经历", "关于我"],
+    heroEyebrow: "",
     heroRole: "游戏发行与运营",
-    heroLine: "听懂玩家，找到规律，再把洞察变成运营动作。",
+    heroLine: "",
     heroBody:
       "我做过玩家访谈、社区与 KOL、活动运营、发行内容和跨团队项目交付，也会结合反馈、转化数据与实际游戏经验，判断一款游戏该如何触达玩家、服务玩家并持续成长。",
-    heroCta: "查看岗位证据",
-    resume: "下载岗位定向简历",
+    heroCta: "查看精选项目",
+    resume: "下载简历",
     stats: [
       ["39.7%", "H5 访问预约转化"],
       ["20–30", "英语核心玩家 / KOL / 媒体访谈"],
@@ -114,17 +105,8 @@ const content = {
     timelineKicker: "职业 / 市场 / 玩家",
     timelineTitle: "职业与项目时间线",
     timelineIntro: "从玩家社区走到国际发行，这里记录了我做过的岗位、市场和代表项目。",
-    selectedTitle: "项目证据",
+    selectedTitle: "精选项目",
     selectedIntro: "四个项目，分别证明我如何把玩家需求和业务目标转化为内容、活动、社区工作与可衡量结果。",
-    methodKicker: "我的运营思路",
-    methodTitle: "把玩家声音、行为结果和产品目标放在同一张图上。",
-    methodBody:
-      "我习惯先从社区反馈、玩家访谈和行为数据判断问题，再把结论转化为内容、活动机制、渠道合作或产品建议，并用参与、转化和玩家反馈决定下一轮怎么改。",
-    methodSteps: [
-      ["01", "理解玩家", "结合访谈、社区反馈、行为结果与自己的游戏经验识别需求。"],
-      ["02", "设计运营动作", "把目标拆成内容、活动机制、渠道选择与玩家价值。"],
-      ["03", "复盘并迭代", "根据转化、参与和定性反馈继续优化下一轮动作。"],
-    ],
     fitKicker: "为什么适合",
     fitTitle: "岗位匹配",
     fitIntro: "这个岗位需要能理解玩家、推动运营动作、经营渠道并快速学习不同产品的综合型人才。以下是我与岗位最直接的四组交集。",
@@ -149,7 +131,7 @@ const content = {
     languages: "中文 · 英语（商务）",
     education: "悉尼大学 · Digital Communication & Culture",
     tools: "Codex · Photoshop · Premiere Pro · InDesign · After Effects",
-    footerTitle: "希望和一款游戏一起长期成长",
+    footerTitle: "期待把下一款好游戏带给更多玩家",
     footerBody: "应聘游戏发行 / 运营方向，重点关注玩家洞察、用户运营、活动运营与渠道增长。",
     copyWechat: "复制微信",
     copied: "已复制",
@@ -575,12 +557,11 @@ export function App() {
 
   const navItems = useMemo(
     () => [
-      ["method", t.nav[0]],
-      ["fit", t.nav[1]],
-      ["timeline", t.nav[2]],
-      ["work", t.nav[3]],
-      ["games", t.nav[4]],
-      ["about", t.nav[5]],
+      ["fit", t.nav[0]],
+      ["timeline", t.nav[1]],
+      ["work", t.nav[2]],
+      ["games", t.nav[3]],
+      ["about", t.nav[4]],
     ],
     [t],
   );
@@ -653,18 +634,18 @@ export function App() {
         <section className="hero" id="home">
           <div className="hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow">{t.heroEyebrow}</p>
+              {t.heroEyebrow && <p className="eyebrow">{t.heroEyebrow}</p>}
               <h1>
                 <span>AILIN</span>
                 <span>LI</span>
               </h1>
               {lang === "zh" && <p className="hero-chinese-name">李艾霖</p>}
               <p className="hero-role">{t.heroRole}</p>
-              <p className="hero-line">{t.heroLine}</p>
+              {t.heroLine && <p className="hero-line">{t.heroLine}</p>}
               <p className="hero-body">{t.heroBody}</p>
 
               <div className="hero-actions">
-                <a className="button button-primary" href="#fit">
+                <a className="button button-primary" href="#work">
                   {t.heroCta}
                   <ArrowDown weight="bold" />
                 </a>
@@ -683,11 +664,30 @@ export function App() {
               </div>
             </div>
 
-            <div className="hero-portrait" aria-label="Portrait of Ailin Li">
-              <img src="/assets/portrait-close.jpg" alt="Ailin Li" />
-              <div className="portrait-label">
-                <span>{t.portraitLabels[0]}</span>
-                <span>{t.portraitLabels[1]}</span>
+            <div className="hero-side">
+              <div className="hero-portrait" aria-label="Portrait of Ailin Li">
+                <img src="/assets/portrait-close.jpg" alt="Ailin Li" />
+                <div className="portrait-label">
+                  <span>{t.portraitLabels[0]}</span>
+                  <span>{t.portraitLabels[1]}</span>
+                </div>
+              </div>
+              <div className="hero-contact-actions">
+                <a className="button button-primary" href="mailto:nagame0318@outlook.com">
+                  {t.email}
+                  <EnvelopeSimple weight="bold" />
+                </a>
+                <button className="button button-ghost" onClick={copyWechat}>
+                  {copied ? (
+                    <>
+                      {t.copied} <Check weight="bold" />
+                    </>
+                  ) : (
+                    <>
+                      {t.copyWechat} <Copy weight="bold" />
+                    </>
+                  )}
+                </button>
               </div>
             </div>
 
@@ -697,27 +697,6 @@ export function App() {
                   <strong>{value}</strong>
                   <span>{label}</span>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="method-section light-section" id="method">
-
-          <div className="method-grid">
-            <div className="method-copy" data-reveal>
-              <p className="section-kicker">{t.methodKicker}</p>
-              <h2>{t.methodTitle}</h2>
-              <p>{t.methodBody}</p>
-            </div>
-
-            <div className="method-steps">
-              {t.methodSteps.map(([no, title, body]) => (
-                <article key={no} data-reveal>
-                  <span>{no}</span>
-                  <h3>{title}</h3>
-                  <p>{body}</p>
-                </article>
               ))}
             </div>
           </div>
@@ -971,23 +950,8 @@ export function App() {
         </div>
 
         <div className="footer-actions">
-          <a className="button button-primary" href="mailto:nagame0318@outlook.com">
-            {t.email}
-            <EnvelopeSimple weight="bold" />
-          </a>
-          <button className="button button-ghost" onClick={copyWechat}>
-            {copied ? (
-              <>
-                {t.copied} <Check weight="bold" />
-              </>
-            ) : (
-              <>
-                {t.copyWechat} <Copy weight="bold" />
-              </>
-            )}
-          </button>
           <a
-            className="button button-ghost"
+            className="button button-primary"
             href={
               lang === "zh"
                 ? "/Li-Ailin-Tencent-Game-Publishing-Operations-Resume.txt"
