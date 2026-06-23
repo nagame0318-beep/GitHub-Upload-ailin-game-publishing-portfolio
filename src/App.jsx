@@ -335,7 +335,7 @@ const gameExperience = {
 const careers = {
   en: [
     {
-      year: "2025 — NOW",
+      year: "2026 — NOW",
       company: "JOYMAKER",
       role: "Publishing & Operations Management Trainee",
       region: "SHANGHAI",
@@ -399,7 +399,7 @@ const careers = {
   ],
   zh: [
     {
-      year: "2025 — 至今",
+      year: "2026 — 至今",
       company: "欢乐互娱",
       role: "发行运营管培生",
       region: "上海",
